@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <style>
+   body {
+            font-family: 'Chakra Petch', cursive;
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white flex items-center justify-center min-h-screen">
+  <div class="text-center p-6 bg-purple-900 rounded-lg shadow-lg w-full max-w-md">
+   <div class="flex justify-center mb-4">
+    <img alt="A round, white, cartoonish face with two black eyes, surrounded by a purple glow" class="rounded-full" height="100" src="https://storage.googleapis.com/a1aa/image/T2PKpt91qpLLRZnnEfhs0f0TublQUNF2LIdYHqdsFx0.jpg" width="100"/>
+   </div>
+   <h1 class="text-3xl text-purple-400 mb-2">
+    Space Mail
+   </h1>
+   <p class="text-purple-300 mb-6">
+    Send your message across the cosmos
+   </p>
+   <form>
+    <div class="mb-4">
+     <label class="block text-left text-purple-300 mb-1" for="email">
+      Your Email:
+     </label>
+     <input class="w-full p-2 bg-gray-800 text-white border border-purple-500 rounded" id="email" placeholder="your@email.com" type="email"/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-left text-purple-300 mb-1" for="subject">
+      Subject:
+     </label>
+     <input class="w-full p-2 bg-gray-800 text-white border border-purple-500 rounded" id="subject" placeholder="Message from Earth" type="text"/>
+    </div>
+    <div class="mb-6">
+     <label class="block text-left text-purple-300 mb-1" for="message">
+      Your Cosmic Message:
+     </label>
+     <textarea class="w-full p-2 bg-gray-800 text-white border border-purple-500 rounded h-32" id="message" placeholder="Type your message here..."></textarea>
+    </div>
+    <button class="w-full p-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition duration-300" type="submit">
+     Launch Message
+     <span class="ml-2">
+      🚀
+     </span>
+    </button>
+   </form>
+  </div>
+ </body>
+</html>
