@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkTree</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-screen py-10 px-4 flex justify-center items-center">
+    <div class="max-w-md w-full glassmorphism p-8">
+      <div class="flex flex-col items-center mb-8">
+        <div class="w-28 h-28 rounded-full overflow-hidden mb-4 profile-img">
+          <div
+            class="w-full h-full flex items-center justify-center text-white text-4xl font-bold"
+          >
+            <img src="img/profile.jpg" alt="profile" class="w-full h-full" />
+          </div>
+        </div>
+        <h1 class="text-white text-2xl font-bold mb-1">SONICX</h1>
+        <p class="text-white text-md opacity-80 mb-3">
+          Web Developer
+        </p>
+        <p class="text-white text-sm text-center opacity-70 mb-4">
+          Berbagi ilmu tentang pembuatan tampilan website sederhana
+        </p>
+
+        <div class="flex space-x-3 mb-6">
+          <a
+            href="https://www.instagram.com/zxsnx._?igsh=bG5nYWtobHQyaTB1"
+            class="social-icon text-white p-2 rounded-full hover:bg-white hover:bg-opacity-20"
+          >
+            <i data-feather="instagram" class="w-5 h-5"></i>
+          </a>
+          <a
+            href="https://github.com/MrSonicX"
+            class="social-icon text-white p-2 rounded-full hover:bg-white hover:bg-opacity-20"
+          >
+            <i data-feather="github" class="w-5 h-5"></i>
+          </a>
+          <a
+            href="email/email.html"
+            class="social-icon text-white p-2 rounded-full hover:bg-white hover:bg-opacity-20"
+          >
+            <i data-feather="mail" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <a
+          href="page 404/404.html"
+          class="link-card glassmorphism flex items-center p-4 rounded-xl text-white"
+        >
+          <i data-feather="globe" class="w-5 h-5 mr-3"></i>
+          <span>Website Resmi</span>
+        </a>
+
+        <a
+          href="https://wa.me/+6285290442701"
+          class="link-card glassmorphism flex items-center p-4 rounded-xl text-white"
+        >
+          <i data-feather="message-circle" class="w-5 h-5 mr-3"></i>
+          <span>WhatsApp</span>
+        </a>
+
+        <a
+          href="page 404/404.html"
+          class="link-card glassmorphism flex items-center p-4 rounded-xl text-white"
+        >
+          <i data-feather="coffee" class="w-5 h-5 mr-3"></i>
+          <span>Link Tree</span>
+        </a>
+      </div>
+
+      <div class="mt-8 text-center">
+        <p class="text-white text-xs opacity-70">© 2025 NXSNX</p>
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+
+      document.querySelectorAll(".link-card").forEach(card => {
+        card.addEventListener("mouseenter", () => {
+          card.classList.add("transform", "scale-102");
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.classList.remove("transform", "scale-102");
+        });
+      });
+    </script>
+  </body>
+</html>
