@@ -1,0 +1,51 @@
+body, 
+html {
+    margin: 0;
+    padding: 0;
+   height: 100%;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.error {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.page{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.back-home {
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #00000080;
+    transition: background-color 0.3s, color 0,3s;
+}
+
+.back-home:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+}
